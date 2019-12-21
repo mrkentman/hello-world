@@ -1,7 +1,6 @@
 import random
 
 target = random.randint(1,20)
-print(target) #So I can quickly test the game
 
 i = 0
 guess = 0

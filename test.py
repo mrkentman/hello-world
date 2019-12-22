@@ -2,7 +2,7 @@
     import time
 
     target = random.randint(1,20)
-    print(target)
+    print(target) #REMOVE AFTER TESTING
     i = 1
     guess = 0
     pb = 0
@@ -30,7 +30,7 @@
                     pb = guess
                 guess = 0
                 target = random.randint(1,20)
-                print(target)
+                print(target) #REMOVE AFTER TESTING
             else:
                 if pb == 0 or guess < pb: #updates the players pb if this is their first go (i.e their pb is 0 as they haven't done a game yet) or if that game was lower than the previous pb
                     pb = guess
@@ -48,4 +48,5 @@
     '''To do:
         - Add way for when a '1' is displayed in the guesses it will say the singular version of guess
         and not the plural form. 
-            - This may be kind of hard as the guess variable is said within a string so'''
+            - This may be kind of hard as the guess variable is said within a string so
+        - Remove the printing target commands that are being used for testing'''

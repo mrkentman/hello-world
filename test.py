@@ -22,17 +22,17 @@
         elif user_guess == target: #correct guess
             print("\nYou have guessed correctly")
             guess += 1
-            print("It took you " + str(guess) + " guess to get the target number.") #Increae guesses by 1 and informs player how many guesses it took them to win.
+            print("It took you " + str(guess) + " guesses to get the target number.") #Increae guesses by 1 and informs player how many guesses it took them to win.
             
             if input("\nWould you like to play again (y/n): ") == "y": #ask the player if they would like to try again
                 print("\n--------------------------------------\n") 
-                if guess != 0 or guess < pb: #updates the players pb if this is their first go (i.e their pb is 0 as they haven't done a game yet) or if that game was lower than the previous pb
+                if pb == 0 or guess < pb: #updates the players pb if this is their first go (i.e their pb is 0 as they haven't done a game yet) or if that game was lower than the previous pb
                     pb = guess
                 guess = 0
                 target = random.randint(1,20)
                 print(target)
             else:
-                if guess != 0 or guess < pb: #updates the players pb if this is their first go (i.e their pb is 0 as they haven't done a game yet) or if that game was lower than the previous pb
+                if pb == 0 or guess < pb: #updates the players pb if this is their first go (i.e their pb is 0 as they haven't done a game yet) or if that game was lower than the previous pb
                     pb = guess
                 print("-------------------------------------------------"
                     "\n              Thanks for playing.              \nYour personal best this session was " + str(pb) + " guesses."

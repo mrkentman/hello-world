@@ -1,2 +1,2 @@
 # hello-world
-This is my first time trying to using Github to manage files better like for my dissi essay that I will be writing this year.
+This is my first time trying to using Github to manage any programming projects I'm working on/completed. I'm very new to programming lol.
